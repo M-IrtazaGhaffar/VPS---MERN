@@ -45,6 +45,7 @@ pm2 stop app
 pm2 logs (Show log stream)
 pm2 flush (Clear logs)
 pm2 env 0
+
 # 0 is the ID of running app in pm2
 
 # To make sure app starts when reboot
