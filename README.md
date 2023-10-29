@@ -57,6 +57,10 @@ pm2 env 0
 
 # To make sure app starts when reboot
 pm2 startup ubuntu
+
+# Sometimes pm2 don't tell the running apps after vps reboot but the app is working totally fine (because of pm2 startup and pm2 save)
+sudo su
+systemctl reload-or-restart pm2-root
 ```
 
 ## 6. Setup Firewall
