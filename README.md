@@ -33,6 +33,8 @@ npm i
 npm i sharp
 npm run build
 pm2 start npm --name "IES" -- start
+(if we want to run Next JS on any other port)
+export PORT=3001
 
 # As for React App, we'll build it noramlly
 npm i
@@ -44,6 +46,9 @@ pm2 show app
 pm2 status
 pm2 restart app
 pm2 stop app
+pm2 delete (app or all or 0/1)
+pm2 save
+pm2 save --force
 pm2 logs (Show log stream)
 pm2 flush (Clear logs)
 pm2 env 0
