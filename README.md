@@ -32,10 +32,12 @@ pm2 start index
 npm i
 npm i sharp
 npm run build
+pm2 start npm --name "IES" -- start
 
 # As for React App, we'll build it noramlly
 npm i
 npm run build
+# No need to pm2, just use the index.html file in build through NGINX route
 
 # Other pm2 commands
 pm2 show app
